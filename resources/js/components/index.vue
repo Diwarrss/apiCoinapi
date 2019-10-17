@@ -8,24 +8,38 @@
           </div>
 
           <div class="container-fluid row py-4">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4 col-sm-4 col-6 mb-3">
               <div class="card">
                 <router-link to="/Apietc" class="btn btn-outline">
-                  <div class="card-body">ETC</div>
+                  <div class="card-body">
+                    <img
+                      src="/img/Ethereum.png"
+                      class="img-fluid img-responsive"
+                      alt="Responsive image"
+                    />
+                  </div>
                 </router-link>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4 col-sm-4 col-6 mb-3">
               <div class="card">
                 <router-link to="/Apibtc" class="btn btn-outline">
-                  <div class="card-body">BTC</div>
+                  <div class="card-body">
+                    <img
+                      src="/img/Bitcoin.png"
+                      class="img-fluid img-responsive"
+                      alt="Responsive image"
+                    />
+                  </div>
                 </router-link>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4 col-sm-4 col-6 mb-3">
               <div class="card">
-                <router-link to="/Apixp" class="btn btn-outline">
-                  <div class="card-body">XRP</div>
+                <router-link to="/Apixrp" class="btn btn-outline">
+                  <div class="card-body">
+                    <img src="/img/xrp.png" class="img-fluid img-responsive" alt="Responsive image" />
+                  </div>
                 </router-link>
               </div>
             </div>

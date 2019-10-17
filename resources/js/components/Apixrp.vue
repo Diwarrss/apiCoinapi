@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <div class="col-md-12 mt-3">
-      <div class="card border-warning">
+      <div class="card border-primary">
         <div class="card-body">
           <div class="table-responsive">
             <table class="table">
@@ -14,11 +14,11 @@
               </thead>
               <tbody>
                 <tr>
-                  <td v-text="dataBtc.time"></td>
-                  <td v-text="dataBtc.asset_id_base"></td>
-                  <td v-text="dataBtc.rate"></td>
+                  <td v-text="dataXrp.time"></td>
+                  <td v-text="dataXrp.asset_id_base"></td>
+                  <td v-text="dataXrp.rate"></td>
                 </tr>
-                <tr v-if="!dataBtc">
+                <tr v-if="!dataXrp">
                   <th colspan="3">
                     <div class="alert alert-warning" role="alert">Sin Información</div>
                   </th>
@@ -35,16 +35,16 @@
 export default {
   data() {
     return {
-      dataBtc: []
+      dataXrp: []
     };
   },
   created() {
     //creamos la variable con la url de la API Laravel
-    let url = "http://apicoinapi.local/api/getbtc";
+    let url = "http://apicoinapi.local/api/getxrp";
     axios
       .get(url)
       .then(res => {
-        this.dataBtc = res.data;
+        this.dataXrp = res.data;
         //console.log(res);
       })
       .catch(err => {

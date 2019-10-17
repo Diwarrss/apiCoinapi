@@ -25,11 +25,11 @@ Vue.use(VueRouter)
 
 Vue.component('coinapi', require('./components/index.vue').default);
 
-// 1. Definimos los componentes vue router.
+// 1. Definimos los componentes vue router y asignamos el contenido
 // These can be imported from other files
 const Apietc = require("./components/Apietc.vue").default;
 const Apibtc = require("./components/Apibtc.vue").default;
-const Apixp = require("./components/Apixp.vue").default;
+const Apixrp = require("./components/Apixrp.vue").default;
 
 //creamos las respectivas rutas llamando los componentes
 const routes = [{
@@ -41,8 +41,8 @@ const routes = [{
         component: Apibtc
     },
     {
-        path: "/Apixp",
-        component: Apixp
+        path: "/Apixrp",
+        component: Apixrp
     }
 ];
 
