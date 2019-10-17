@@ -8,6 +8,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+//importamos vue router para usarlo de manera global
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -19,7 +23,34 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('coinapi', require('./components/index.vue').default);
+
+// 1. Definimos los componentes vue router.
+// These can be imported from other files
+const Apietc = require("./components/Apietc.vue").default;
+const Apibtc = require("./components/Apibtc.vue").default;
+const Apixp = require("./components/Apixp.vue").default;
+
+//creamos las respectivas rutas llamando los componentes
+const routes = [{
+        path: "/Apietc",
+        component: Apietc
+    },
+    {
+        path: "/Apibtc",
+        component: Apibtc
+    },
+    {
+        path: "/Apixp",
+        component: Apixp
+    }
+];
+
+// 3. Creamos la instacia del enrutador y pasamos la opcion 'routes'
+const router = new VueRouter({
+    routes,
+    base: "/"
+});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -27,6 +58,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+//se llama la instancia router
 const app = new Vue({
     el: '#app',
+    router
 });
