@@ -2080,6 +2080,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -6541,7 +6544,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-2ac2c897] {\n  background: #a2d0f7;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-2ac2c897] {\n  background: #a2d0f7;\n}\n", ""]);
 
 // exports
 
@@ -38308,6 +38311,10 @@ var render = function() {
                               alt: "Responsive image"
                             }
                           })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "mt-3" }, [
+                          _vm._v("Ethereum Classic")
                         ])
                       ]
                     )
@@ -38336,7 +38343,9 @@ var render = function() {
                               alt: "Responsive image"
                             }
                           })
-                        ])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "mt-3" }, [_vm._v("Bitcoin")])
                       ]
                     )
                   ],
@@ -38364,7 +38373,9 @@ var render = function() {
                               alt: "Responsive image"
                             }
                           })
-                        ])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "mt-3" }, [_vm._v("Ripple")])
                       ]
                     )
                   ],
