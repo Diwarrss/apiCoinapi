@@ -1,31 +1,25 @@
 <template>
-  <div class="mx-auto">
-    <div class="col-md-12 mt-3">
-      <div class="card border-primary">
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Última Actualización</th>
-                  <th scope="col">Tipo Moneda</th>
-                  <th scope="col">Valor USD</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- mostramos la respectiva informacion obtenida -->
-                <tr>
-                  <td v-text="dataXrp.time"></td>
-                  <td v-text="dataXrp.asset_id_base"></td>
-                  <td v-text="dataXrp.rate"></td>
-                </tr>
-                <tr v-if="!dataXrp">
-                  <th colspan="3">
-                    <div class="alert alert-warning" role="alert">Sin Información</div>
-                  </th>
-                </tr>
-              </tbody>
-            </table>
+  <div>
+    <div class="card border-primary">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>
+              <strong>Última Actualización</strong>
+            </h4>
+            <h5 v-text="dataXrp.time"></h5>
+          </div>
+          <div class="col-md-4">
+            <h4>
+              <strong>Tipo Moneda</strong>
+            </h4>
+            <h5 v-text="dataXrp.asset_id_base"></h5>
+          </div>
+          <div class="col-md-4">
+            <h4>
+              <strong>Valor USD</strong>
+            </h4>
+            <h5 v-text="dataXrp.rate"></h5>
           </div>
         </div>
       </div>

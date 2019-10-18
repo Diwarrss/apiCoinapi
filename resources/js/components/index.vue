@@ -47,7 +47,9 @@
               </div>
             </div>
             <!-- aqui mostramos el contenido de los componentes creados para mostrar con vue-router -->
-            <router-view></router-view>
+            <div class="col-md-12">
+              <router-view></router-view>
+            </div>
           </div>
         </div>
       </div>

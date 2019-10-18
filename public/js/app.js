@@ -1866,12 +1866,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1902,12 +1896,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -1994,12 +1982,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2030,6 +2012,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -6547,7 +6531,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-2ac2c897] {\n  background: #a2d0f7;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-2ac2c897] {\n  background: #a2d0f7;\n}\n", ""]);
 
 // exports
 
@@ -38041,32 +38025,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mx-auto" }, [
-    _c("div", { staticClass: "col-md-12 mt-3" }, [
-      _c("div", { staticClass: "card border-warning" }, [
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "table-responsive" }, [
-            _c("table", { staticClass: "table" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataBtc.time) }
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataBtc.asset_id_base) }
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataBtc.rate) }
-                  })
-                ]),
-                _vm._v(" "),
-                !_vm.dataBtc ? _c("tr", [_vm._m(1)]) : _vm._e()
-              ])
-            ])
+  return _c("div", [
+    _c("div", { staticClass: "card border-warning" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("h5", { domProps: { textContent: _vm._s(_vm.dataBtc.time) } })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("h5", {
+              domProps: { textContent: _vm._s(_vm.dataBtc.asset_id_base) }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("h5", { domProps: { textContent: _vm._s(_vm.dataBtc.rate) } })
           ])
         ])
       ])
@@ -38078,27 +38058,19 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Última Actualización")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Tipo Moneda")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Valor USD")])
-      ])
-    ])
+    return _c("h4", [_c("strong", [_vm._v("Última Actualización")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("th", { attrs: { colspan: "3" } }, [
-      _c(
-        "div",
-        { staticClass: "alert alert-warning", attrs: { role: "alert" } },
-        [_vm._v("Sin Información")]
-      )
-    ])
+    return _c("h4", [_c("strong", [_vm._v("Tipo Moneda")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", [_c("strong", [_vm._v("Valor USD")])])
   }
 ]
 render._withStripped = true
@@ -38122,32 +38094,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mx-auto" }, [
-    _c("div", { staticClass: "col-md-12 mt-3" }, [
-      _c("div", { staticClass: "card border-success" }, [
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "table-responsive" }, [
-            _c("table", { staticClass: "table" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataEtc.time) }
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataEtc.asset_id_base) }
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataEtc.rate) }
-                  })
-                ]),
-                _vm._v(" "),
-                !_vm.dataEtc ? _c("tr", [_vm._m(1)]) : _vm._e()
-              ])
-            ])
+  return _c("div", [
+    _c("div", { staticClass: "card border-success" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("h5", { domProps: { textContent: _vm._s(_vm.dataEtc.time) } })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("h5", {
+              domProps: { textContent: _vm._s(_vm.dataEtc.asset_id_base) }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("h5", { domProps: { textContent: _vm._s(_vm.dataEtc.rate) } })
           ])
         ])
       ])
@@ -38159,27 +38127,19 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Última Actualización")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Tipo Moneda")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Valor USD")])
-      ])
-    ])
+    return _c("h4", [_c("strong", [_vm._v("Última Actualización")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("th", { attrs: { colspan: "3" } }, [
-      _c(
-        "div",
-        { staticClass: "alert alert-warning", attrs: { role: "alert" } },
-        [_vm._v("Sin Información")]
-      )
-    ])
+    return _c("h4", [_c("strong", [_vm._v("Tipo Moneda")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", [_c("strong", [_vm._v("Valor USD")])])
   }
 ]
 render._withStripped = true
@@ -38203,32 +38163,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mx-auto" }, [
-    _c("div", { staticClass: "col-md-12 mt-3" }, [
-      _c("div", { staticClass: "card border-primary" }, [
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "table-responsive" }, [
-            _c("table", { staticClass: "table" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataXrp.time) }
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataXrp.asset_id_base) }
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    domProps: { textContent: _vm._s(_vm.dataXrp.rate) }
-                  })
-                ]),
-                _vm._v(" "),
-                !_vm.dataXrp ? _c("tr", [_vm._m(1)]) : _vm._e()
-              ])
-            ])
+  return _c("div", [
+    _c("div", { staticClass: "card border-primary" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("h5", { domProps: { textContent: _vm._s(_vm.dataXrp.time) } })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("h5", {
+              domProps: { textContent: _vm._s(_vm.dataXrp.asset_id_base) }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("h5", { domProps: { textContent: _vm._s(_vm.dataXrp.rate) } })
           ])
         ])
       ])
@@ -38240,27 +38196,19 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Última Actualización")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Tipo Moneda")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Valor USD")])
-      ])
-    ])
+    return _c("h4", [_c("strong", [_vm._v("Última Actualización")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("th", { attrs: { colspan: "3" } }, [
-      _c(
-        "div",
-        { staticClass: "alert alert-warning", attrs: { role: "alert" } },
-        [_vm._v("Sin Información")]
-      )
-    ])
+    return _c("h4", [_c("strong", [_vm._v("Tipo Moneda")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", [_c("strong", [_vm._v("Valor USD")])])
   }
 ]
 render._withStripped = true
@@ -38290,106 +38238,101 @@ var render = function() {
         _c("div", { staticClass: "card" }, [
           _vm._m(0),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "container-fluid row py-4" },
-            [
-              _c("div", { staticClass: "col-md-4 col-sm-4 col-6 mb-3" }, [
-                _c(
-                  "div",
-                  { staticClass: "card" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-outline",
-                        attrs: { to: "/Apietc" }
-                      },
-                      [
-                        _c("div", { staticClass: "card-body" }, [
-                          _c("img", {
-                            staticClass: "img-fluid img-responsive",
-                            attrs: {
-                              src: "/img/Ethereum.png",
-                              alt: "Responsive image"
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "mt-3" }, [
-                          _vm._v("Ethereum Classic")
-                        ])
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4 col-sm-4 col-6 mb-3" }, [
-                _c(
-                  "div",
-                  { staticClass: "card" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-outline",
-                        attrs: { to: "/Apibtc" }
-                      },
-                      [
-                        _c("div", { staticClass: "card-body" }, [
-                          _c("img", {
-                            staticClass: "img-fluid img-responsive",
-                            attrs: {
-                              src: "/img/Bitcoin.png",
-                              alt: "Responsive image"
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "mt-3" }, [_vm._v("Bitcoin")])
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4 col-sm-4 col-6 mb-3" }, [
-                _c(
-                  "div",
-                  { staticClass: "card" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-outline",
-                        attrs: { to: "/Apixrp" }
-                      },
-                      [
-                        _c("div", { staticClass: "card-body" }, [
-                          _c("img", {
-                            staticClass: "img-fluid img-responsive",
-                            attrs: {
-                              src: "/img/xrp.png",
-                              alt: "Responsive image"
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "mt-3" }, [_vm._v("Ripple")])
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ]),
-              _vm._v(" "),
-              _c("router-view")
-            ],
-            1
-          )
+          _c("div", { staticClass: "container-fluid row py-4" }, [
+            _c("div", { staticClass: "col-md-4 col-sm-4 col-6 mb-3" }, [
+              _c(
+                "div",
+                { staticClass: "card" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-outline",
+                      attrs: { to: "/Apietc" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("img", {
+                          staticClass: "img-fluid img-responsive",
+                          attrs: {
+                            src: "/img/Ethereum.png",
+                            alt: "Responsive image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "mt-3" }, [
+                        _vm._v("Ethereum Classic")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4 col-sm-4 col-6 mb-3" }, [
+              _c(
+                "div",
+                { staticClass: "card" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-outline",
+                      attrs: { to: "/Apibtc" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("img", {
+                          staticClass: "img-fluid img-responsive",
+                          attrs: {
+                            src: "/img/Bitcoin.png",
+                            alt: "Responsive image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "mt-3" }, [_vm._v("Bitcoin")])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4 col-sm-4 col-6 mb-3" }, [
+              _c(
+                "div",
+                { staticClass: "card" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-outline",
+                      attrs: { to: "/Apixrp" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("img", {
+                          staticClass: "img-fluid img-responsive",
+                          attrs: {
+                            src: "/img/xrp.png",
+                            alt: "Responsive image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "mt-3" }, [_vm._v("Ripple")])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-12" }, [_c("router-view")], 1)
+          ])
         ])
       ])
     ])
