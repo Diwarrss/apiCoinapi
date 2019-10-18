@@ -54,6 +54,6 @@ $ npm run watch
 $ npm run dev
 ----------------
 ```
-Recomendación usar SSL para no tener conflicto:
+Recomendación usar SSL para no tener conflicto y poder consumir la API:
 
 - Uso Laragon para la gestión de proyectos de laravel
