@@ -1871,6 +1871,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1881,7 +1882,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     //creamos la variable con la url de la API Laravel
-    var url = "http://apicoinapi.local/api/getbtc";
+    var url = "/api/getbtc";
     axios.get(url).then(function (res) {
       _this.dataBtc = res.data; //console.log(res);
     })["catch"](function (err) {
@@ -1934,6 +1935,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1944,7 +1946,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     //creamos la variable con la url de la API Laravel
-    var url = "http://apicoinapi.local/api/getetc";
+    var url = "/api/getetc";
     axios.get(url).then(function (res) {
       _this.dataEtc = res.data; //console.log(res);
     })["catch"](function (err) {
@@ -1997,6 +1999,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2007,7 +2010,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     //creamos la variable con la url de la API Laravel
-    var url = "http://apicoinapi.local/api/getxrp";
+    var url = "/api/getxrp";
     axios.get(url).then(function (res) {
       _this.dataXrp = res.data; //console.log(res);
     })["catch"](function (err) {
@@ -53866,8 +53869,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! c:\laragon\www\apiCoinapi\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! c:\laragon\www\apiCoinapi\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\apiCoinapi\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\apiCoinapi\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

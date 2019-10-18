@@ -13,6 +13,7 @@
                 </tr>
               </thead>
               <tbody>
+                <!-- mostramos la respectiva informacion obtenida -->
                 <tr>
                   <td v-text="dataBtc.time"></td>
                   <td v-text="dataBtc.asset_id_base"></td>
@@ -40,7 +41,7 @@ export default {
   },
   created() {
     //creamos la variable con la url de la API Laravel
-    let url = "http://apicoinapi.local/api/getbtc";
+    let url = "/api/getbtc";
     axios
       .get(url)
       .then(res => {
