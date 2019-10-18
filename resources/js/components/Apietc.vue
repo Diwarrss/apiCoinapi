@@ -33,18 +33,13 @@ export default {
       dataEtc: []
     };
   },
-  created() {
+  //creamos funcion async
+  created: async function() {
     //creamos la variable con la url de la API Laravel
     let url = "/api/getetc";
-    axios
-      .get(url)
-      .then(res => {
-        this.dataEtc = res.data;
-        //console.log(res);
-      })
-      .catch(err => {
-        console.error(err);
-      });
+
+    let response = await axios.get(url);
+    this.dataEtc = response.data;
   }
 };
 </script>

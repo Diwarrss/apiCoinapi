@@ -49,6 +49,7 @@ const routes = [{
 // 3. Creamos la instacia del enrutador y pasamos la opcion 'routes'
 const router = new VueRouter({
     routes,
+    mode: 'history',
     base: "/"
 });
 
